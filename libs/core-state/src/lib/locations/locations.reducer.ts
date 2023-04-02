@@ -24,9 +24,9 @@ export const initialLocationsState: LocationsState = locationsAdapter.getInitial
     
 });
 
-const onFailed = (state, { error }): LocationsState => ({ ...state, error });
+const onFailed = (state: LocationsState, { error}: {error: string | null}): LocationsState => ({ ...state, error });
 
-const onDispatch = (state, action): LocationsState => ({
+const onDispatch = (state: LocationsState, action: Action): LocationsState => ({
     ...state,
     loaded: false,
     error: null

@@ -1,0 +1,10 @@
+.home_grid {
+    display: grid;
+    grid-template-columns: repeat(autofit, 1fr);
+    gap: 5px;
+    grid-auto-flow: column;
+}
+
+.home_card {
+    max-width: 400px;
+}

@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
-  selector: 'sandbox-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'sandbox-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class HomeComponent implements OnInit {
+
   items: MenuItem[] = [];
   title = 'dashboard';
 
@@ -140,5 +141,4 @@ export class AppComponent implements OnInit {
       }
   ];
 }
-
 }
