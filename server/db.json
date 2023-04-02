@@ -1,0 +1,28 @@
+{
+  "locations": [
+    {
+      "id": 2,
+      "tripTitle": "Trip to the Mountains",
+      "city": "City2",
+      "state": "State2",
+      "zip": "12345-9999",
+      "addressOne": "456 Main St",
+      "addressTwo": "apt 111",
+      "country": "Country2",
+      "date": "2019-01-02",
+      "description": "Description2"
+    },
+    {
+      "id": 1,
+      "tripTitle": "Trip to the Beach",
+      "city": "City1",
+      "state": "State1",
+      "zip": "99999-9999",
+      "addressOne": "123 Main St",
+      "addressTwo": "apt 101",
+      "country": "Country1",
+      "date": "2019-01-01",
+      "description": "Description1"
+    }
+  ]
+}
