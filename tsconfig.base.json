@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@sandbox/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@sandbox/core-data": ["libs/core-data/src/index.ts"],
+      "@sandbox/core-state": ["libs/core-state/src/index.ts"],
+      "@sandbox/environment": ["libs/environment/src/index.ts"],
+      "@sandbox/material": ["libs/material/src/index.ts"],
+      "@sandbox/pipes": ["libs/pipes/src/index.ts"],
+      "@sandbox/theme": ["libs/theme/src/index.ts"],
+      "@sandbox/ui": ["libs/ui/src/index.ts"],
+      "@sandbox/ui-login": ["libs/ui-login/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
