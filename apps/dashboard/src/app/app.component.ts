@@ -4,6 +4,8 @@ import { LocationService } from '@sandbox/core-data';
 import { LocationsFacade } from '@sandbox/core-state';
 import { MenuItem } from 'primeng/api';
 import { Observable } from 'rxjs';
+import { PrimeNGConfig } from 'primeng/api';
+
 
 @Component({
   selector: 'sandbox-root',
@@ -19,12 +21,12 @@ export class AppComponent implements OnInit {
   
 
   constructor(
-
-  ) {
-
-  }
+    private primengConfig: PrimeNGConfig
+  ) {}
+   
 
   ngOnInit() {
+    this.primengConfig.ripple = true;
   
 
     this.items = [
