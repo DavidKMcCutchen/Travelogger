@@ -17,6 +17,17 @@ import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { LoginComponent } from './login/login.component';
 import { SpinnerModule } from 'primeng/spinner';
+import { StepsModule } from 'primeng/steps';
+import { NewEntryComponent } from './new-entry/new-entry.component';
+import { MessagesModule } from 'primeng/messages';
+import { ToastModule } from 'primeng/toast';
+import { AddDetailsComponent } from './new-entry/add-details/add-details.component';
+import { DescriptionComponent } from './new-entry/description/description.component';
+import { PhotosComponent } from './new-entry/photos/photos.component';
+import { ConfirmationComponent } from './new-entry/confirmation/confirmation.component';
+import { FormsModule } from '@angular/forms';
+import {InputTextModule} from 'primeng/inputtext';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +35,11 @@ import { SpinnerModule } from 'primeng/spinner';
     NxWelcomeComponent,
     HomeComponent,
     LoginComponent,
+    NewEntryComponent,
+    AddDetailsComponent,
+    DescriptionComponent,
+    PhotosComponent,
+    ConfirmationComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,8 +52,12 @@ import { SpinnerModule } from 'primeng/spinner';
     GMapModule,
     MenubarModule,
     ButtonModule,
-    SpinnerModule
-
+    SpinnerModule,
+    StepsModule,
+    MessagesModule,
+    ToastModule,
+    FormsModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent],
