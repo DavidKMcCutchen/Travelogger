@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { TravelLocation } from '@sandbox/api-interfaces';
 import { LOCATION_ENVIRONMENT, LocationEnvironment } from '@sandbox/environment';
 
-const BASE_URL = 'localhost:3000/';
+const BASE_URL = 'http://localhost:3000/';
 const MODEL = 'locations';
 
 

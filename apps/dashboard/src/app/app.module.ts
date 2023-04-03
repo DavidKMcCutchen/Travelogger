@@ -26,8 +26,10 @@ import { DescriptionComponent } from './new-entry/description/description.compon
 import { PhotosComponent } from './new-entry/photos/photos.component';
 import { ConfirmationComponent } from './new-entry/confirmation/confirmation.component';
 import { FormsModule } from '@angular/forms';
-import {InputTextModule} from 'primeng/inputtext';
-
+import { InputTextModule } from 'primeng/inputtext';
+import { EffectsModule } from '@ngrx/effects';
+import { LocationEffects } from 'libs/core-state/src/lib/locations/locations.effects';
+import { LocationDetailsComponent } from './home/location-details/location-details.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import {InputTextModule} from 'primeng/inputtext';
     DescriptionComponent,
     PhotosComponent,
     ConfirmationComponent,
+    LocationDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import {InputTextModule} from 'primeng/inputtext';
     MessagesModule,
     ToastModule,
     FormsModule,
-    InputTextModule
+    InputTextModule,
+    EffectsModule.forFeature([LocationEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { TravelLocation } from '@sandbox/api-interfaces';
+import { LocationService } from '@sandbox/core-data';
+import { LocationsFacade } from '@sandbox/core-state';
 import { MenuItem } from 'primeng/api';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'sandbox-root',
@@ -9,8 +13,20 @@ import { MenuItem } from 'primeng/api';
 export class AppComponent implements OnInit {
   items: MenuItem[] = [];
   title = 'dashboard';
+  locations: any;
+  testData: TravelLocation[] = [];
+
+  
+
+  constructor(
+
+  ) {
+
+  }
 
   ngOnInit() {
+  
+
     this.items = [
       {
           label:'File',
@@ -140,5 +156,7 @@ export class AppComponent implements OnInit {
       }
   ];
 }
+
+
 
 }

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TravelLocation } from '@sandbox/api-interfaces';
+import { LocationsFacade } from '@sandbox/core-state';
 import { MenuItem } from 'primeng/api';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'sandbox-home',
@@ -8,10 +11,19 @@ import { MenuItem } from 'primeng/api';
 })
 export class HomeComponent implements OnInit {
 
+  allLocations$: Observable<TravelLocation[]> = this.locationsFacade.allLocations$;
+  selectedLocation$: Observable<TravelLocation> = this.locationsFacade.selectedLocation$;
+  locations: TravelLocation[] = [];
   items: MenuItem[] = [];
   title = 'dashboard';
 
+  constructor(
+    private locationsFacade: LocationsFacade
+  ) {}
+
   ngOnInit() {
+    this.locationsFacade.loadLocations();
+
     this.items = [
       {
           label:'File',

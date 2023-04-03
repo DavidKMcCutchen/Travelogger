@@ -15,13 +15,13 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
             quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
         <ng-template pTemplate="footer">
-            <p-button label="Save" icon="pi pi-check"></p-button>
+            <p-button routerLink="/new-entry" label="Create an Entry" icon="pi pi-check"></p-button>
             <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
         </ng-template>
     </p-card>
 <p-card class="home_card" header="Sample Card">
     <p>
-        Content
+        <sandbox-location-details [locations]="allLocations$ | async"></sandbox-location-details>
     </p>
 </p-card>
 </div>

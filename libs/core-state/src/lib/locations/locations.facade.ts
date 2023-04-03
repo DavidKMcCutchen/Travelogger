@@ -34,7 +34,7 @@ export class LocationsFacade {
     }
 
     loadLocation(locationId: string) {
-        this.dispatch(LocationsActions.loadLocation({ locationId }));
+        this.store.dispatch(LocationsActions.loadLocation({ locationId }));
     }
 
     saveLocation(location: TravelLocation) {
