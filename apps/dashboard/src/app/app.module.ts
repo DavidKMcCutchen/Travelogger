@@ -28,8 +28,12 @@ import { ConfirmationComponent } from './new-entry/confirmation/confirmation.com
 import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { EffectsModule } from '@ngrx/effects';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { LocationEffects } from 'libs/core-state/src/lib/locations/locations.effects';
 import { LocationDetailsComponent } from './home/location-details/location-details.component';
+import {AccordionModule} from 'primeng/accordion';
+
+
 
 @NgModule({
   declarations: [
@@ -62,6 +66,7 @@ import { LocationDetailsComponent } from './home/location-details/location-detai
     FormsModule,
     InputTextModule,
     EffectsModule.forFeature([LocationEffects]),
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent],
