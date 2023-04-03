@@ -32,6 +32,9 @@ import { EffectsModule } from '@ngrx/effects';
 import { LocationEffects } from 'libs/core-state/src/lib/locations/locations.effects';
 import { LocationDetailsComponent } from './home/location-details/location-details.component';
 import {AccordionModule} from 'primeng/accordion';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { DialogModule } from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -66,7 +69,10 @@ import {AccordionModule} from 'primeng/accordion';
     FormsModule,
     InputTextModule,
     EffectsModule.forFeature([LocationEffects]),
-    AccordionModule
+    AccordionModule,
+    GoogleMapsModule,
+    DialogModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
