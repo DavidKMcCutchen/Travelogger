@@ -12,6 +12,8 @@
 
 body {
     background-color: var(--surface-0);
+    // background-image: url("/assets/images/topography.svg"),
+    //   linear-gradient(110deg, var(--surface-0), rgb(8, 8, 81));
     display: grid;
     grid-template-columns: repeat(autofit, 1fr);
 }
