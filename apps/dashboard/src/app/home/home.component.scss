@@ -3,10 +3,11 @@
     grid-template-columns: repeat(autofit, 1fr);
     gap: 5px;
     grid-auto-flow: column;
+    justify-items: center;
 }
 
 .home_card {
-    max-width: 400px;
+    // max-width: 800px;
     margin: 5px;
     display: grid;
 }
