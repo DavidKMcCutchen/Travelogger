@@ -18,12 +18,20 @@ export class AddDetailsComponent implements OnInit {
     date: new Date(),
     addressOne: '',
     addressTwo: '',
+    latitude: null,
+    longitude: null,
   };
   submitted = false;
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.goAwaySqiggles();
+  }
+
+  goAwaySqiggles() {
+    console.log(this.localeInfo);
+  }
 
   nextPage() {
     if (
@@ -37,5 +45,3 @@ export class AddDetailsComponent implements OnInit {
     this.submitted = true;
   }
 }
-
-
