@@ -18,8 +18,8 @@ export class AddDetailsComponent implements OnInit {
     date: new Date(),
     addressOne: '',
     addressTwo: '',
-    latitude: null,
-    longitude: null,
+    latitude: 0,
+    longitude: 0,
   };
   submitted = false;
 

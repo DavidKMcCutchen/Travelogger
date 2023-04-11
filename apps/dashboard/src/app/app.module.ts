@@ -25,7 +25,7 @@ import { AddDetailsComponent } from './new-entry/add-details/add-details.compone
 import { DescriptionComponent } from './new-entry/description/description.component';
 import { PhotosComponent } from './new-entry/photos/photos.component';
 import { ConfirmationComponent } from './new-entry/confirmation/confirmation.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { EffectsModule } from '@ngrx/effects';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
@@ -73,6 +73,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GoogleMapsModule,
     DialogModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

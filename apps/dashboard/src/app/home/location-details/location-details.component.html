@@ -7,23 +7,53 @@
 <button type="button" pButton label="Zoom In" icon="pi pi-plus" (click)="zoomIn(gmap.getMap())" style="margin-right:.25em"></button>
 <button type="button" pButton label="Zoom Out" icon="pi pi-minus" (click)="zoomOut(gmap.getMap())"></button>
 
-<p-dialog showEffect="fade" [(visible)]="dialogVisible" header="New Location" [style]="{width: '300px'}">>
+<div class="test123">
+<p-dialog showEffect="fade" class="map_popup" [(visible)]="dialogVisible" header="New Location" [style]="{width: '500px', display: 'grid'}">
+  <form [formGroup]="locationForm" (ngSubmit)="onSubmit()">
     <div class="grid p-fluid" *ngIf="selectedPosition">
-        <div class="col-2"><label for="title">Label</label></div>
-        <div class="col-10"><input type="text" pInputText id="title" [(ngModel)]="markerTitle"></div>
+      <div class="col-2"><label for="tripTitle">Trip Title</label></div>
+      <div class="col-10"><input type="text" pInputText id="tripTitle" formControlName="tripTitle"></div>
 
-        <div class="col-2"><label for="lat">Lat</label></div>
-        <div class="col-10"><input id="lat" type="text" readonly pInputText [ngModel]="selectedPosition.lat()"></div>
+      <div class="col-2"><label for="city">City</label></div>
+      <div class="col-10"><input type="text" pInputText id="city" formControlName="city"></div>
 
-        <div class="col-2"><label for="lng">Lng</label></div>
-        <div class="col-10"><input id="lng" type="text" readonly pInputText [ngModel]="selectedPosition.lng()"></div>
+      <div class="col-2"><label for="state">State</label></div>
+      <div class="col-10"><input type="text" pInputText id="state" formControlName="state"></div>
 
-        <div class="col-2"><label for="drg">Drag</label></div>
-        <div class="col-10"><p-checkbox [(ngModel)]="draggable" binary="true" [style]="{'margin-top':'.25em'}"></p-checkbox></div>
+      <div class="col-2"><label for="zip">Zip</label></div>
+      <div class="col-10"><input type="text" pInputText id="zip" formControlName="zip"></div>
+
+      <div class="col-2"><label for="addressOne">Address 1</label></div>
+      <div class="col-10"><input type="text" pInputText id="addressOne" formControlName="addressOne"></div>
+
+      <div class="col-2"><label for="addressTwo">Address 2</label></div>
+      <div class="col-10"><input type="text" pInputText id="addressTwo" formControlName="addressTwo"></div>
+
+      <div class="col-2"><label for="country">Country</label></div>
+      <div class="col-10"><input type="text" pInputText id="country" formControlName="country"></div>
+
+      <div class="col-2"><label for="date">Date</label></div>
+      <div class="col-10"><input type="date" pInputText id="date" formControlName="date"></div>
+
+      <div class="col-2"><label for="description">Description</label></div>
+      <div class="col-10"><textarea pInputTextarea id="description" formControlName="description"></textarea></div>
+
+      <div class="col-2"><label for="lat">Lat</label></div>
+      <div class="col-10"><input id="lat" type="text"  pInputText formControlName="latitude" [ngModel]="selectedPosition.lat()"></div>
+
+      <div class="col-2"><label for="lng">Lng</label></div>
+      <div class="col-10"><input id="lng" type="text"  pInputText formControlName="longitude" [ngModel]="selectedPosition.lng()"></div>
+    
+      <!-- <div class="col-2"><label for="drg">Drag</label></div> -->
+      <div class="col-10"><p-checkbox [(ngModel)]="draggable" binary="true" [style]="{'margin-top':'.25em'}"></p-checkbox></div>
     </div>
-    <ng-template pTemplate="footer">
-        <div>
-            <button type="button" pButton label="Add Marker" icon="pi-plus" (click)="addMarker()"></button>
-        </div>
-    </ng-template>
-</p-dialog>
+    <div>
+        <button type="submit" pButton label="Add Marker" icon="pi-plus"></button>
+      </div>
+    <!-- <ng-template pTemplate="footer">
+      
+    </ng-template> -->
+    </form>
+    </p-dialog>
+</div>
+    

@@ -29,8 +29,8 @@ export interface TravelLocation extends BaseId {
     country: string;
     date: Date;
     description: string;
-    latitude: number | null;
-    longitude: number | null;
+    latitude: number;
+    longitude: number;
 
 };
 
@@ -45,8 +45,8 @@ export const emptyLocation = {
     country: '',
     date: new Date(),
     description: '',
-    latitude: null,
-    longitude: null
+    latitude: 0,
+    longitude: 0
 };
 
 export const sampleLocation = {
@@ -60,6 +60,6 @@ export const sampleLocation = {
     country: 'Luna',
     date: new Date(),
     description: 'This is a sample location',
-    latitude: 12.2324334,
-    longitude: 91.292384
+    latitude: 0,
+    longitude: 0
 };
