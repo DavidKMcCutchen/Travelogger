@@ -4,4 +4,10 @@
     // grid-gap: 1rem;
     // margin: 1rem 0;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    // color: black;
+}
+
+
+::ng-deep .test456{
+    color: black;
 }

@@ -88,6 +88,34 @@
       "latitude": 29.381157799500812,
       "longitude": -98.44662032349898,
       "id": 7
+    },
+    {
+      "tripTitle": "Birth",
+      "city": "Tampa Bay",
+      "state": "Florida",
+      "zip": "33621",
+      "addressOne": "9211 Marina Bay Dr",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "1991-09-22",
+      "description": "Born 0720 on September 22, 1991 at MacDill AFB in Tampa Bay, Florida",
+      "latitude": 27.849852915758433,
+      "longitude": -82.50904083251953,
+      "id": 8
+    },
+    {
+      "tripTitle": "Disney Cruise",
+      "city": "Nassau",
+      "state": "",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "The Bahamas",
+      "date": "2014-05-03",
+      "description": "Arrived in Nassau during a Disney Cruise with my family.  I hated the cruise because I was sad lol.",
+      "latitude": 25.082450599508793,
+      "longitude": -77.33984470367432,
+      "id": 9
     }
   ]
 }

@@ -1,6 +1,6 @@
 <p-toast [style]="{marginTop: '80px'}"></p-toast>
 
-<p-gmap #gmap [style]="{'width':'100%','height':'400px', 'margin-bottom': '1em'}" [options]="options" [overlays]="overlays"
+<p-gmap class="test456" #gmap [style]="{'width':'100%','height':'400px', 'margin-bottom': '1em'}" [options]="options" [overlays]="overlays"
        (onMapClick)="handleMapClick($event)" (onOverlayClick)="handleOverlayClick($event)" (onOverlayDragEnd)="handleDragEnd($event)"></p-gmap>
 
 <button type="button" pButton label="Clear" icon="pi pi-times" (click)="clear()" style="margin-right:.25em"></button>
