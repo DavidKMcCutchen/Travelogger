@@ -129,4 +129,9 @@ body {
     .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text:hover {
         color: #f5f5f5;
     }
+
+    .p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+      background-color: #2a2a2a;
+        border-color: #3a3a3a;
+    }
   }

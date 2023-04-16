@@ -1,0 +1,1 @@
+export const googleMapsAPIKey = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjBjC1enFroxFqxsUiTRpXX9eY99P_Tm8';

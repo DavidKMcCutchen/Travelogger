@@ -3,6 +3,7 @@ import { TravelLocation } from '@sandbox/api-interfaces';
 import { LocationsFacade } from '@sandbox/core-state';
 import { MenuItem } from 'primeng/api';
 import { Observable } from 'rxjs';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'sandbox-home',
@@ -16,10 +17,18 @@ export class HomeComponent implements OnInit {
   locations: TravelLocation[] = [];
   items: MenuItem[] = [];
   title = 'dashboard';
+  isMobileSize = false;
 
   constructor(
-    private locationsFacade: LocationsFacade
-  ) {}
+    private locationsFacade: LocationsFacade,
+    private breakpointObserver: BreakpointObserver,
+  ) {
+    this.breakpointObserver.observe([
+        Breakpoints.XSmall
+    ]).subscribe(result => {
+        this.isMobileSize = result.matches;
+    });
+  }
 
   ngOnInit() {
     this.locationsFacade.loadLocations();
