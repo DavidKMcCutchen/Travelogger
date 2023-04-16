@@ -130,6 +130,76 @@
       "latitude": -8.757751283888986,
       "longitude": -63.88346580811312,
       "id": 10
+    },
+    {
+      "tripTitle": "Jorban Visit",
+      "city": "Lake Buena Vista",
+      "state": "Florida",
+      "zip": "32835",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2022-12-01",
+      "description": "Jorban and Sayrahhh",
+      "latitude": 28.37055432658212,
+      "longitude": -81.53725883998595,
+      "id": 11
+    },
+    {
+      "tripTitle": "Visit with Brett",
+      "city": "Tucson",
+      "state": "Arizona",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2017-11-01",
+      "description": "Went to go speak with the cheer department about possible scholarships while attending grad school.",
+      "latitude": 32.22884847762159,
+      "longitude": -110.94884634017944,
+      "id": 12
+    },
+    {
+      "tripTitle": "Stop during move",
+      "city": "Baton Rouge",
+      "state": "Louisiana",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2022-08-25",
+      "description": "Stayed in a nice hotel just passing through",
+      "latitude": 30.418465388080676,
+      "longitude": -91.16741018835705,
+      "id": 13
+    },
+    {
+      "tripTitle": "Family Trip to Austin",
+      "city": "Austin",
+      "state": "Texas",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2005-07-04",
+      "description": "Visiting Eric's family in Austin",
+      "latitude": 30.451998956137793,
+      "longitude": -97.66874757134913,
+      "id": 14
+    },
+    {
+      "tripTitle": "Meetup with the Scottish Boyos",
+      "city": "Las Vegas",
+      "state": "Nevada",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2016-10-01",
+      "description": "Gerry, Gary and Scotty almost killed me",
+      "latitude": 36.137929902260815,
+      "longitude": -115.1445744272943,
+      "id": 15
     }
   ]
 }

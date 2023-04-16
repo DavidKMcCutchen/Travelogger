@@ -69,7 +69,7 @@ export class LocationDetailsComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['locations'] && this.locations?.length) {
       this.initOverlays();
-    }
+    };
   }
 
   handleMapClick(event: any) {
@@ -153,6 +153,26 @@ export class LocationDetailsComponent implements OnInit, OnChanges {
     if (this.locationForm.valid) {
       const location: TravelLocation = this.locationForm.value;
       this.locationsFacade.saveLocation(location);
+  
+      // Add a new marker to the overlays array
+      this.overlays.push(
+        new google.maps.Marker({
+          position: {
+            lat: location.latitude,
+            lng: location.longitude,
+          },
+          title: location.tripTitle,
+          draggable: this.draggable,
+        })
+      );
+  
+      // Re-center the map on the new marker
+      this.options = {
+        ...this.options,
+        center: { lat: location.latitude, lng: location.longitude },
+        zoom: 3,
+      };
+  
       this.locationForm.reset();
       this.dialogVisible = false;
     }
