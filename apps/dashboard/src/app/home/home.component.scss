@@ -12,9 +12,9 @@
     display: grid;
 }
 
-::ng-deep .p-card {
-    min-width: 100%;
-}
+// ::ng-deep .p-card {
+//     min-width: 100%;
+// }
 
 ::ng-deep .p-card-header {
     padding: 4px 0 0 4px; // adjust the values as needed
@@ -25,17 +25,19 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 16px;
-    justify-items: center;
-
+    // justify-items: center;
   }
+  
   @media (min-width: 768px) and (max-width: 1024px) {
     .card-container {
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
   }
-
-//   @media (max-width: 600px) {
-//     .card-container {
-//       grid-auto-flow: row;
-//     }
-//   }
+  
+  // Add this media query for smaller screens
+  @media (max-width: 767px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
