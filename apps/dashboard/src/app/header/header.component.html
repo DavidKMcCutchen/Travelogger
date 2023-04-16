@@ -1,0 +1,29 @@
+<div class="header">
+    <p-menubar [model]="items">
+      
+      <ng-template pTemplate="end">
+        <button
+          pButton
+          type="button"
+          label="Go {{themeTitle}}"
+          (click)="toggleTheme()"
+          class="theme-toggle-button"
+        ></button>
+        <button
+          *ngIf="!isAuthenticated"
+          pButton
+          type="button"
+          label="Login"
+          routerLink="/login"
+        ></button>
+        <button
+          *ngIf="isAuthenticated"
+          pButton
+          type="button"
+          label="Logout"
+          (click)="logout()"
+        ></button>
+      </ng-template>
+    </p-menubar>
+  </div>
+  

@@ -31,12 +31,11 @@ import { EffectsModule } from '@ngrx/effects';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { LocationEffects } from 'libs/core-state/src/lib/locations/locations.effects';
 import { LocationDetailsComponent } from './home/location-details/location-details.component';
-import {AccordionModule} from 'primeng/accordion';
+import { AccordionModule } from 'primeng/accordion';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { DialogModule } from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +49,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PhotosComponent,
     ConfirmationComponent,
     LocationDetailsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -74,7 +74,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DialogModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent],

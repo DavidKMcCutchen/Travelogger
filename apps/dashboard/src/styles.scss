@@ -38,6 +38,7 @@ body {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     color: var(--on-surface-1);
+    
     // font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
     // display: grid;
@@ -95,6 +96,8 @@ body {
   .dark-mode .p-card {
     background-color: #2a2a2a;
     border-color: #3a3a3a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
   }
   
   .dark-mode .p-card .p-card-title {
@@ -103,4 +106,27 @@ body {
 
   .dark-mode .p-card .p-card-subtitle {
     color: #f5f5f5;
+  }
+
+  .dark-mode .header {
+    .p-menubar {
+        background-color: #2a2a2a;
+        border-color: #3a3a3a;
+    }
+  
+    .p-menuitem-link {
+        color: #f5f5f5;
+    }
+  
+    .p-menuitem-link:hover {
+      background-color: var(--surface-b);
+      color: var(--surface-b-text);
+    }
+    .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
+        color: #f5f5f5;
+    }
+
+    .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text:hover {
+        color: #f5f5f5;
+    }
   }

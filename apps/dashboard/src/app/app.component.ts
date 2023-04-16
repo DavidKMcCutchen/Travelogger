@@ -14,8 +14,8 @@ export class AppComponent implements OnInit {
   title = 'dashboard';
   locations: any;
   testData: TravelLocation[] = [];
-  darkMode: boolean = false;
-  themeTitle: string = 'Dark';
+  // darkMode: boolean = false;
+  // themeTitle: string = 'Dark';
 
   constructor(
     private primengConfig: PrimeNGConfig,
@@ -23,8 +23,8 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.darkMode = false;
-    this.themeTitle = 'Dark';
+    // this.darkMode = false;
+    // this.themeTitle = 'Dark';
     this.primengConfig.ripple = true;
 
     this.items = [
@@ -152,21 +152,21 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  toggleTheme() {
-    this.themeService.toggleTheme();
-    this.darkMode = !this.darkMode;
-    console.log(this.darkMode);
-    // if (!this.darkMode) {
-    //   this.themeTitle = 'Light';
-    // }
-    // else {
-    //   this.themeTitle = 'Dark';
-    // }
-    // If darkMode is false, change this.themeTitle to 'Light', else remain 'Dark'
-    if (this.darkMode) {
-      this.themeTitle = 'Light';
-    } else {
-      this.themeTitle = 'Dark';
-    }
-  }
+  // toggleTheme() {
+  //   this.themeService.toggleTheme();
+  //   this.darkMode = !this.darkMode;
+  //   console.log(this.darkMode);
+  //   // if (!this.darkMode) {
+  //   //   this.themeTitle = 'Light';
+  //   // }
+  //   // else {
+  //   //   this.themeTitle = 'Dark';
+  //   // }
+  //   // If darkMode is false, change this.themeTitle to 'Light', else remain 'Dark'
+  //   if (this.darkMode) {
+  //     this.themeTitle = 'Light';
+  //   } else {
+  //     this.themeTitle = 'Dark';
+  //   }
+  // }
 }

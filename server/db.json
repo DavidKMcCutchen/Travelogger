@@ -116,6 +116,20 @@
       "latitude": 25.082450599508793,
       "longitude": -77.33984470367432,
       "id": 9
+    },
+    {
+      "tripTitle": "Visit Nicole",
+      "city": "Porto Velho",
+      "state": "Rondonia",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "Brasil",
+      "date": "2021-06-05",
+      "description": "Stayed there until August",
+      "latitude": -8.757751283888986,
+      "longitude": -63.88346580811312,
+      "id": 10
     }
   ]
 }
