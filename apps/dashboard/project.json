@@ -21,10 +21,10 @@
         ],
         "styles": [
           "apps/dashboard/src/styles.scss",
-          "primeng/resources/primeng.min.css",
-          "primeicons/primeicons.css",
+          "node_modules/primeng/resources/primeng.min.css",
+          "node_modules/primeicons/primeicons.css",
           "primeflex/primeflex.css",
-          "node_modules/primeng/resources/themes/vela-blue/theme.css"
+          "node_modules/primeng/resources/themes/nova-accent/theme.css"
           
 
 
@@ -38,8 +38,8 @@
           "budgets": [
             {
               "type": "initial",
-              "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumWarning": "1mb",
+              "maximumError": "2mb"
             },
             {
               "type": "anyComponentStyle",

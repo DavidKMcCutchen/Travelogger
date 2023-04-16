@@ -4,16 +4,103 @@
 // @import "primeng/resources/primeng.css";
 // @import "primeicons/primeicons.css";
 // @import "node_modules/primeng/resources/themes/vela-green/theme.css";
+// PrimeIcons
+@import "~primeicons/primeicons.css";
 
+// PrimeNG Theme (choose one)
+@import "~primeng/resources/themes/nova-accent/theme.css";
+ // or any other theme
+
+// PrimeNG Component Styles
+@import "~primeng/resources/primeng.min.css";
 // @import "node_modules/primeng/resources/themes/soho-dark/theme.css";
-
 
 
 
 body {
     background-color: var(--surface-0);
+    // color: rgb(29, 29, 31);
     // background-image: url("/assets/images/topography.svg"),
     //   linear-gradient(110deg, var(--surface-0), rgb(8, 8, 81));
     display: grid;
     grid-template-columns: repeat(autofit, 1fr);
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+::ng-deep .p-card {
+    background-color: var(--surface-1);
+    background: #000;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: var(--on-surface-1);
+    // font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+    // display: grid;
+    // grid-template-columns: repeat(autofit, 1fr);
+    // grid-template-rows: repeat(autofit, 1fr);
+    // margin: 1rem;
+    // padding: 1rem;
+}
+
+
+  
+  /* Light mode */
+  .light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .light-mode a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .light-mode a:hover {
+    text-decoration: underline;
+  }
+
+  .light-mode .p-card {
+    background-color: #fff;
+    border-color: #e0e0e0;
+  }
+  
+  .light-mode .p-card .p-card-title {
+    color: #333;
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+  }
+  
+  .dark-mode * { // Added wildcard selector for all elements
+    color: #f5f5f5;
+  }
+  
+  .dark-mode a {
+    color: #66ccff;
+    text-decoration: none;
+  }
+  
+  .dark-mode a:hover {
+    text-decoration: underline;
+  }
+  
+  .dark-mode .p-card {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+  }
+  
+  .dark-mode .p-card .p-card-title {
+    color: #f5f5f5;
+  }
+
+  .dark-mode .p-card .p-card-subtitle {
+    color: #f5f5f5;
+  }

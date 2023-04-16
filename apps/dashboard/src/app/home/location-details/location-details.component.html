@@ -39,13 +39,13 @@
       <div class="col-10"><textarea pInputTextarea id="description" formControlName="description"></textarea></div>
 
       <div class="col-2"><label for="lat">Lat</label></div>
-      <div class="col-10"><input id="lat" type="text"  pInputText formControlName="latitude" [ngModel]="selectedPosition.lat()"></div>
+      <div class="col-10"><input id="lat" type="text"  pInputText formControlName="latitude"></div>
 
       <div class="col-2"><label for="lng">Lng</label></div>
-      <div class="col-10"><input id="lng" type="text"  pInputText formControlName="longitude" [ngModel]="selectedPosition.lng()"></div>
+      <div class="col-10"><input id="lng" type="text"  pInputText formControlName="longitude"></div>
     
       <!-- <div class="col-2"><label for="drg">Drag</label></div> -->
-      <div class="col-10"><p-checkbox [(ngModel)]="draggable" binary="true" [style]="{'margin-top':'.25em'}"></p-checkbox></div>
+      <!-- <div class="col-10"><p-checkbox name="draggable" [(ngModel)]="draggable" binary="true" [style]="{'margin-top':'.25em'}"></p-checkbox></div> -->
     </div>
     <div>
         <button type="submit" pButton label="Add Marker" icon="pi-plus"></button>

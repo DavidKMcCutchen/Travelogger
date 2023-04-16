@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TravelLocation } from '@sandbox/api-interfaces';
+import { ThemeService } from '@sandbox/core-data';
 import { MenuItem } from 'primeng/api';
 import { PrimeNGConfig } from 'primeng/api';
 
@@ -13,10 +14,17 @@ export class AppComponent implements OnInit {
   title = 'dashboard';
   locations: any;
   testData: TravelLocation[] = [];
+  darkMode: boolean = false;
+  themeTitle: string = 'Dark';
 
-  constructor(private primengConfig: PrimeNGConfig) {}
+  constructor(
+    private primengConfig: PrimeNGConfig,
+    private themeService: ThemeService
+  ) {}
 
   ngOnInit() {
+    this.darkMode = false;
+    this.themeTitle = 'Dark';
     this.primengConfig.ripple = true;
 
     this.items = [
@@ -142,5 +150,23 @@ export class AppComponent implements OnInit {
         icon: 'pi pi-fw pi-power-off',
       },
     ];
+  }
+
+  toggleTheme() {
+    this.themeService.toggleTheme();
+    this.darkMode = !this.darkMode;
+    console.log(this.darkMode);
+    // if (!this.darkMode) {
+    //   this.themeTitle = 'Light';
+    // }
+    // else {
+    //   this.themeTitle = 'Dark';
+    // }
+    // If darkMode is false, change this.themeTitle to 'Light', else remain 'Dark'
+    if (this.darkMode) {
+      this.themeTitle = 'Light';
+    } else {
+      this.themeTitle = 'Dark';
+    }
   }
 }

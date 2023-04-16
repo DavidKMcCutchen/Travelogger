@@ -5,7 +5,7 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { TravelLocation } from '@sandbox/api-interfaces';
 import { LocationsFacade } from '@sandbox/core-state';
 import { MessageService } from 'primeng/api';
@@ -75,6 +75,8 @@ export class LocationDetailsComponent implements OnInit, OnChanges {
   handleMapClick(event: any) {
     this.dialogVisible = true;
     this.selectedPosition = event.latLng;
+    this.locationForm.controls['latitude'].setValue(this.selectedPosition.lat());
+    this.locationForm.controls['longitude'].setValue(this.selectedPosition.lng());
   }
 
   handleOverlayClick(event: any) {
