@@ -37,7 +37,10 @@ import { DialogModule } from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { PasswordModule } from 'primeng/password';
-import {MessageModule} from 'primeng/message';
+import { MessageModule } from 'primeng/message';
+import { AnalyticsComponent } from './home/analytics/analytics.component';
+import { ChartModule } from 'primeng/chart';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +55,7 @@ import {MessageModule} from 'primeng/message';
     ConfirmationComponent,
     LocationDetailsComponent,
     HeaderComponent,
-    
+    AnalyticsComponent,
   ],
   imports: [
     BrowserModule,
@@ -78,8 +81,8 @@ import {MessageModule} from 'primeng/message';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MessageModule,
-    PasswordModule
-
+    PasswordModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent],

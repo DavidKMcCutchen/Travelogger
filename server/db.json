@@ -10,7 +10,9 @@
       "date": "2020-05-05",
       "latitude": -14.7939,
       "longitude": -39.0468,
-      "description": "Move to Ilheus, Brasil"
+      "description": "Move to Ilheus, Brasil",
+      "initialBudget": 20000,
+      "actualSpent": 33000
     },
     {
       "id": 1,
@@ -20,7 +22,9 @@
       "date": "2016-08-14",
       "latitude": 11.5624,
       "longitude": 104.916,
-      "description": "Missions Trip volunteering with Rapha House in Cambodia"
+      "description": "Missions Trip volunteering with Rapha House in Cambodia",
+      "initialBudget": 10000,
+      "actualSpent": 15000
     },
     {
       "id": 3,
@@ -33,7 +37,9 @@
       "date": "2014-05-01",
       "latitude": 28.3745,
       "longitude": -81.5493,
-      "description": "Family Vacation to Disneyworld"
+      "description": "Family Vacation to Disneyworld",
+      "initialBudget": 25000,
+      "actualSpent": 35000
     },
     {
       "tripTitle": "South Korea Trip with Dad",
@@ -45,6 +51,8 @@
       "latitude": 37.0838419,
       "longitude": 127.026538170568,
       "description": "Fiend Centennial at Osan AFB",
+      "initialBudget": 10000,
+      "actualSpent": 15000,
       "id": 4
     },
     {
@@ -59,7 +67,9 @@
       "description": "Hawaii with my family",
       "latitude": 21.304499296047485,
       "longitude": -157.84388930855303,
-      "id": 5
+      "id": 5,
+      "initialBudget": 3000,
+      "actualSpent": 4100
     },
     {
       "tripTitle": "Marlin Christmas Party",
@@ -73,7 +83,9 @@
       "description": "Marilia and I went to SD for 3 days for the Christmas party and we had a chance to enjoy ourselves in the city.",
       "latitude": 32.711614508407365,
       "longitude": -117.1485898399181,
-      "id": 6
+      "id": 6,
+      "initialBudget": 3000,
+      "actualSpent": 2500
     },
     {
       "tripTitle": "Hang out with Josh",
@@ -87,7 +99,9 @@
       "description": "Moving to Orlando from Phoenix and went out drinking with Josh that night.",
       "latitude": 29.381157799500812,
       "longitude": -98.44662032349898,
-      "id": 7
+      "id": 7,
+      "initialBudget": 350,
+      "actualSpent": 450
     },
     {
       "tripTitle": "Birth",
@@ -200,6 +214,50 @@
       "latitude": 36.137929902260815,
       "longitude": -115.1445744272943,
       "id": 15
+    },
+    {
+      "tripTitle": "Grandpa's Funeral",
+      "city": "New York City",
+      "state": "New York",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2013-12-01",
+      "description": "We went to the city as a family after the funeral",
+      "latitude": 40.69083585922495,
+      "longitude": -74.00838288157237,
+      "id": 16
+    },
+    {
+      "tripTitle": "Stop in NM during move to FL",
+      "city": "Las Cruces",
+      "state": "New Mexico",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2018-03-01",
+      "description": "Stayed in an Airbnb during my move out to Florida",
+      "latitude": 32.29873802404321,
+      "longitude": -106.76712288519055,
+      "id": 17
+    },
+    {
+      "tripTitle": "Drop off Bernice",
+      "city": "El Paso",
+      "state": "Texas",
+      "zip": "",
+      "addressOne": "",
+      "addressTwo": "",
+      "country": "United States",
+      "date": "2019-05-01",
+      "description": "Dropped off B at her Uncles house",
+      "latitude": 31.768043522746304,
+      "longitude": -106.48681891087948,
+      "initialBudget": "100",
+      "actualSpent": "150",
+      "id": 18
     }
   ]
 }

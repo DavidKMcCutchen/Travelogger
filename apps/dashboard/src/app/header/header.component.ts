@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   items = [
     {
       label: 'Home',
-      routerLink: '/',
+      routerLink: '/home',
     },
     {
       label: 'Create an Entry',

@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { TravelLocation } from '@sandbox/api-interfaces';
+import { SharedDataService } from '@sandbox/core-data';
 import { LocationsFacade } from '@sandbox/core-state';
 import { MessageService } from 'primeng/api';
 
@@ -38,7 +39,8 @@ export class LocationDetailsComponent implements OnInit, OnChanges {
   constructor(
     private messageService: MessageService,
     private formBuilder: FormBuilder,
-    private locationsFacade: LocationsFacade
+    private locationsFacade: LocationsFacade,
+    private shareData: SharedDataService
   ) {
     this.locationForm = this.formBuilder.group({
       tripTitle: ['', Validators.required],
@@ -52,6 +54,8 @@ export class LocationDetailsComponent implements OnInit, OnChanges {
       description: ['', Validators.required],
       latitude: ['', Validators.required],
       longitude: ['', Validators.required],
+      initialBudget: ['', Validators.required],
+      actualSpent: ['', Validators.required],
     });
   }
 
@@ -70,6 +74,8 @@ export class LocationDetailsComponent implements OnInit, OnChanges {
     if (changes['locations'] && this.locations?.length) {
       this.initOverlays();
     };
+    this.shareData.updateData(this.locations);
+
   }
 
   handleMapClick(event: any) {
