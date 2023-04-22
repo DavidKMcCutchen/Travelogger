@@ -6,7 +6,8 @@ import { AddDetailsComponent } from './new-entry/add-details/add-details.compone
 import { DescriptionComponent } from './new-entry/description/description.component';
 import { NewEntryComponent } from './new-entry/new-entry.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { AnalyticsComponent } from './home/analytics/analytics.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
+import { TableComponent } from './table/table.component';
 
 export const appRoutes: Route[] = [
     {path: '', component: LoginComponent},
@@ -16,6 +17,7 @@ export const appRoutes: Route[] = [
     {path: 'new-entry/add-details', component: AddDetailsComponent},
     {path: 'new-entry/describe', component: DescriptionComponent},
     {path: 'analytics', component: AnalyticsComponent},
+    {path: 'table', component: TableComponent},
     {path: '**', redirectTo: ''}
 ];
 

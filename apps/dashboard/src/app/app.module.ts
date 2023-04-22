@@ -7,7 +7,6 @@ import { appRoutes } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreDataModule } from '@sandbox/core-data';
 import { CoreStateModule } from '@sandbox/core-state';
-import { CommonModule } from '@angular/common';
 import { EnvironmentModule } from '@sandbox/environment';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
@@ -38,8 +37,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { PasswordModule } from 'primeng/password';
 import { MessageModule } from 'primeng/message';
-import { AnalyticsComponent } from './home/analytics/analytics.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
 import { ChartModule } from 'primeng/chart';
+import { SliderModule } from 'primeng/slider';
+import { TableComponent } from './table/table.component';
+import { TableModule } from 'primeng/table';
+import { AccountComponent } from './account/account.component';
+
 
 
 @NgModule({
@@ -56,6 +60,8 @@ import { ChartModule } from 'primeng/chart';
     LocationDetailsComponent,
     HeaderComponent,
     AnalyticsComponent,
+    TableComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,7 +88,9 @@ import { ChartModule } from 'primeng/chart';
     ReactiveFormsModule,
     MessageModule,
     PasswordModule,
-    ChartModule
+    ChartModule,
+    SliderModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

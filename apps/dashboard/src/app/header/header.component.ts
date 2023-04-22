@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       label: 'Create an Entry',
-      routerLink: '/entry',
+      routerLink: '/new-entry',
     },
     {
       label: 'Account',
@@ -28,6 +28,10 @@ export class HeaderComponent implements OnInit {
       label: 'Analytics',
       routerLink: '/analytics',
     },
+    {
+      label: 'Table View',
+      routerLink: '/table',
+    }
   ];
 
   isAuthenticated = false; // You can change this value to mock authentication status
