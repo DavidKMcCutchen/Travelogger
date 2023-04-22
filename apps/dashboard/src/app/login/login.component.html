@@ -1,5 +1,22 @@
-<div class="login_page">
-<p-button routerLink="/home">
-    Placeholder for Login Page
-</p-button>
+<div class="login-container">
+    <p-card class="login-card">
+        <p-header>
+            <h2>Login</h2>
+        </p-header>
+        <form (ngSubmit)="onSubmit()">
+            <div class="p-fluid">
+                <div class="p-field">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" pInputText formControlName="username" name="username" required />
+                </div>
+                <div class="p-field">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" pInputText formControlName="password" name="password" required />
+                </div>
+            </div>
+            <p-footer>
+                <button routerLink="/home" pButton type="submit" label="Login" class="p-button-primary"></button>
+            </p-footer>
+        </form>
+    </p-card>
 </div>

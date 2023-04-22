@@ -152,21 +152,7 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  // toggleTheme() {
-  //   this.themeService.toggleTheme();
-  //   this.darkMode = !this.darkMode;
-  //   console.log(this.darkMode);
-  //   // if (!this.darkMode) {
-  //   //   this.themeTitle = 'Light';
-  //   // }
-  //   // else {
-  //   //   this.themeTitle = 'Dark';
-  //   // }
-  //   // If darkMode is false, change this.themeTitle to 'Light', else remain 'Dark'
-  //   if (this.darkMode) {
-  //     this.themeTitle = 'Light';
-  //   } else {
-  //     this.themeTitle = 'Dark';
-  //   }
-  // }
+
+
+  
 }

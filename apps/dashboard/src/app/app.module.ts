@@ -36,6 +36,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { DialogModule } from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
+import { PasswordModule } from 'primeng/password';
+import {MessageModule} from 'primeng/message';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import { HeaderComponent } from './header/header.component';
     ConfirmationComponent,
     LocationDetailsComponent,
     HeaderComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -74,6 +77,9 @@ import { HeaderComponent } from './header/header.component';
     DialogModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    MessageModule,
+    PasswordModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],

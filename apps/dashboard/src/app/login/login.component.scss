@@ -1,9 +1,56 @@
-.login_page {
-    color: white;
-    // background: #1a1a1a;
-    // // height: 50vh;
+.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    // background-color: #f1f1f1;
+    
+  }
 
-}
+  .login-card {
+    width: 400px;
+    padding: 2rem;
+    // background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+  }
+  
+//   .card {
+//     width: 400px;
+//     padding: 2rem;
+//     background-color: #fff;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+//     border-radius: 6px;
+//   }
+  
+  .login-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  p-inputText,
+  p-password {
+    width: 100%;
+  }
+  
+  p-message {
+    margin-bottom: 1rem;
+  }
+  
+  p-button {
+    display: block;
+    width: 100%;
+  }
+  
